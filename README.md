@@ -21,3 +21,7 @@ Jailbreak is a mark up language inspired by markdown.
 * Listing :
 
 ```*``` : Bullet List
+
+* Linking :
+
+```[TITLE]-(URL)``` : Links
