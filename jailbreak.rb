@@ -20,6 +20,9 @@ class Jailbreak
  def li(txt)
   return "<li> #{txt} </li>"
  end
+ def a(txt, txt1)
+  return "<a href='#{txt}'>#{txt1}</a>"
+ end
  def html(txt)
   return txt
  end
@@ -42,6 +45,13 @@ class MarkUp
 	  jb.h6(txt.split('-')[1])
 	elsif txt.split('-')[0] == "*"
 	  jb.li(txt.split('-')[1])
+	elsif txt.split('-')[0].include?"["
+	  arr = txt.split('-')
+	  arr[0]["["] = ""
+	  arr[0]["]"] = ""
+	  arr[1]["("] = ""
+	  arr[1][")"] = ""
+	  jb.a(arr[0], arr[1])
 	else
 	  jb.html(txt)
 	end
