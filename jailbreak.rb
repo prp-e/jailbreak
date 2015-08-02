@@ -24,3 +24,26 @@ class Jailbreak
   return txt
  end
 end
+
+class MarkUp
+ def self.convert(txt)
+	jb = Jailbreak.new
+	if txt.split('-')[0] == "$"
+	  jb.h1(txt.split('-')[1])
+	elsif txt.split('-')[0] == "$$"
+	  jb.h2(txt.split('-')[1])
+	elsif txt.split[0] == "$$$"
+	  jb.h3(txt.split('-')[1])
+	elsif txt.split('-')[0] == "$$$$"
+	  jb.h4(txt.split('-')[1])
+	elsif txt.split('-')[0] == "$$$$$"
+	  jb.h5(txt.split('-')[1])
+	elsif txt.split('-')[0] == "$$$$$$"
+	  jb.h6(txt.split('-')[1])
+	elsif txt.split('-')[0] == "*"
+	  jb.li(txt.split('-')[1])
+	else
+	  jb.html(txt)
+	end
+ end
+end
