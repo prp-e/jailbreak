@@ -25,3 +25,7 @@ Jailbreak is a mark up language inspired by markdown.
 * Linking :
 
 ```[TITLE]-(URL)``` : Links
+
+* Images :
+
+``` img-URL-TITLE ``` : Image
