@@ -23,6 +23,9 @@ class Jailbreak
  def a(txt, txt1)
   return "<a href='#{txt}'>#{txt1}</a>"
  end
+ def img(txt, txt1)
+  return "<img src='#{txt}' alt='#{txt1}' />"
+ end
  def html(txt)
   return txt
  end
@@ -52,6 +55,9 @@ class MarkUp
 	  arr[1]["("] = ""
 	  arr[1][")"] = ""
 	  jb.a(arr[0], arr[1])
+	elsif txt.split('-')[0] == "img"
+	  arr = txt.split('-')
+	  jb.img(arr[1], arr[2])
 	else
 	  jb.html(txt)
 	end
