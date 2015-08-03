@@ -29,3 +29,16 @@ Jailbreak is a mark up language inspired by markdown.
 * Images :
 
 ``` img-URL-TITLE ``` : Image
+
+### Generic Syntax 
+
+```
+   COMMAND-TEXT
+```
+
+for example :
+
+```
+    $-Hello, World
+    $$-The First Article
+```
