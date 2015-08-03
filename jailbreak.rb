@@ -26,6 +26,9 @@ class Jailbreak
  def img(txt, txt1)
   return "<img src='#{txt}' alt='#{txt1}' />"
  end
+ def pre(txt)
+  return "<pre> #{txt} </pre>"
+ end
  def html(txt)
   return txt
  end
@@ -58,6 +61,8 @@ class MarkUp
 	elsif txt.split('-')[0] == "img"
 	  arr = txt.split('-')
 	  jb.img(arr[1], arr[2])
+	elsif txt.split('-')[0] == "pre"
+	  jb.pre(txt.split('-')[1])
 	else
 	  jb.html(txt)
 	end
