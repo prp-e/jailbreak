@@ -30,6 +30,10 @@ Jailbreak is a mark up language inspired by markdown.
 
 ``` img-URL-TITLE ``` : Image
 
+* Preview :
+
+```pre-CODE``` : Preview of CODE
+
 ### Generic Syntax 
 
 ```
