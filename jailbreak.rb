@@ -57,7 +57,7 @@ class MarkUp
 	  arr[0]["]"] = ""
 	  arr[1]["("] = ""
 	  arr[1][")"] = ""
-	  jb.a(arr[0], arr[1])
+	  jb.a(arr[1], arr[0])
 	elsif txt.split('-')[0] == "img"
 	  arr = txt.split('-')
 	  jb.img(arr[1], arr[2])
