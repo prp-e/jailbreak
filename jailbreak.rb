@@ -41,7 +41,7 @@ class MarkUp
 	  jb.h1(txt.split('-')[1])
 	elsif txt.split('-')[0] == "$$"
 	  jb.h2(txt.split('-')[1])
-	elsif txt.split('-') == "$$$"
+	elsif txt.split('-')[0] == "$$$"
 	  jb.h3(txt.split('-')[1])
 	elsif txt.split('-')[0] == "$$$$"
 	  jb.h4(txt.split('-')[1])
